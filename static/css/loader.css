@@ -1,0 +1,53 @@
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/Zafkiel.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 230px;
+}
+
+.sec {
+    border: 1px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 60px;
+    border-radius: 20%;
+    animation: spin .2s linear infinite;
+}
+
+.min {
+    border: 2px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50px;
+    border-radius: 20%;
+    animation: spin 1.2s linear infinite;
+}
+
+.hour {
+    border: 3px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 40px;
+    border-radius: 20%;
+    animation: spin 2.4s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateZ(0deg);
+        transform-origin: top;
+    }
+    100% {
+        transform: rotateZ(360deg);
+        transform-origin: top;
+    }
+}
