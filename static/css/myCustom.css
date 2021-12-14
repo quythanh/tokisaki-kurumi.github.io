@@ -41,6 +41,7 @@ a {
 }
 
 .linkBtn:hover {
+    transform: scale(1.05);
     background: #fff;
     color: black;
 }
