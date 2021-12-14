@@ -25,6 +25,14 @@ a {
     text-decoration: none;
 }
 
+#avatar {
+    border-radius: 50%;
+    width: 128px;
+    margin-bottom: 16px;
+    box-shadow: 0 0 0 2px rgb(46, 134, 248);
+    border: solid 4px transparent;
+}
+
 .linkBtn {
     background: none;
     border: 2px solid #fff;
