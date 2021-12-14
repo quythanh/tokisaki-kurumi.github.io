@@ -9,7 +9,7 @@
     overflow-x: hidden;
 }
 
-@keyFrames change {
+@keyframes change {
     0% {
         background-position: 0 50%;
     }
@@ -44,6 +44,11 @@ a {
     transform: scale(1.05);
     background: #fff;
     color: black;
+}
+
+.linkBtn:hover i {
+    transform: rotateY(180deg);
+    transition: transform 0.4s ease-in-out;
 }
 
 .thumbnail {
