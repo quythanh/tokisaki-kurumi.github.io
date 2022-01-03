@@ -66,3 +66,8 @@ a {
     width: 32px;
     font-size: 28px;
 }
+
+.title {
+    padding: 18px 66px;
+    font-weight: bolder;
+}
