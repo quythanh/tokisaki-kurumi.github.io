@@ -1,5 +1,12 @@
-const root = document.getElementById("root");
+// create root
+var root = document.createElement('div')
+root.id = 'root'
+root.className = 'container'
 
+document.body.appendChild(root)
+document.body.id = 'background'
+
+// React
 const listBtn = [
     {
         href: "https://fb.com/quythanh2205",
@@ -64,4 +71,4 @@ const row = ( <div className="row justify-content-md-center" style={{padding: "2
 </div>
 )
 
-ReactDOM.render(row, root);
+ReactDOM.render(row, root)
