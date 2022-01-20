@@ -1,74 +1,66 @@
-// create root
-var root = document.createElement('div')
-root.id = 'root'
-root.className = 'container'
-
-document.body.appendChild(root)
-document.body.id = 'background'
-
-// React
 const listBtn = [
     {
         href: "https://fb.com/quythanh2205",
         iClass: "fab fa-facebook-f",
-        title: "Facebook",
-        clickable: true
+        title: "Facebook"
     },
     {
-        href: "https://www.instagram.com/quythanh2205/",
+        href: "https://instagram.com/quythanh2205",
         iClass: "fab fa-instagram",
-        title: "Instagram",
-        clickable: true
+        title: "Instagram"
     },
     {
         href: "https://mail.google.com/mail/?view=cm&fs=1&to=quythanh2205@gmail.com",
         iClass: "fad fa-envelope",
-        title: "Email",
-        clickable: true
+        title: "Email"
     },
     {
-        href: "https://github.com/quythanh/",
+        href: "https://github.com/quythanh",
         iClass: "fab fa-github",
-        title: "Github",
-        clickable: true
+        title: "Github"
     },
     {
         href: "https://discord.gg/F5y64JsdG8",
         iClass: "fab fa-discord",
-        title: "Discord Server",
-        clickable: true
+        title: "Discord Server"
     },
     {
-        href: "#",
         iClass: "fad fa-mobile",
-        title: "078 540 2578",
-        clickable: false
+        title: "078 540 2578"
     }
-];
+]
 
-const renderBtn = (btn, index) => {
-    return btn.clickable ? (
-        <a key={index} className="linkBtn" href={btn.href} target="_blank">
-            <div className="thumbnail"><i className={btn.iClass}></i></div>
-            <div className="title">{btn.title}</div>
-        </a>
-    ) : (
-        <a key={index} className="linkBtn" href={btn.href} onClick={e => e.preventDefault()}>
-            <div className="thumbnail"><i className={btn.iClass}></i></div>
-            <div className="title">{btn.title}</div>
-        </a>
-    );
-};
-
-const row = ( <div className="row justify-content-md-center" style={{padding: "24px 12px"}}>
+const Header = () => (
     <div style={{textAlign: "center", marginBottom: "16px"}}>
-        <img id="avatar" src="https://media.discordapp.net/attachments/855110078628757504/899230780776132608/image0.jpg" />
+        <img
+            id="avatar"
+            src="https://media.discordapp.net/attachments/855110078628757504/899230780776132608/image0.jpg"
+            alt="avatar"
+        />
         <br />
-        <b style={{fontSize: "16px"}}>Tsàn Quý Thành</b>
+        <div style={{fontSize: "16px", fontWeight: "bolder"}}>Tsàn Quý Thành</div>
     </div>
-
-    { listBtn.map((btn, index) => renderBtn(btn, index)) }
-</div>
 )
 
-ReactDOM.render(row, root)
+const Btn = ({ btn }) => {
+    let Component = 'a'
+    if (!btn.href)
+        Component = 'button'
+    
+    return (
+        <Component className="linkBtn" href={btn.href} target="_blank">
+            <div className="thumbnail"><i className={btn.iClass}></i></div>
+            <div className="title">{btn.title}</div>
+        </Component>
+    )
+}
+
+const Row = () => (
+    <div className="row justify-content-md-center" style={{padding: "24px 12px"}}>
+        <Header />
+
+        { listBtn.map((btn, index) => <Btn key={index} btn={btn} />) }
+    </div>
+)
+
+ReactDOM.render(<Row />, root)
