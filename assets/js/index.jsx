@@ -55,7 +55,7 @@ const Btn = ({ btn }) => {
     )
 }
 
-const Row = () => (
+const App = () => (
     <div className="row justify-content-md-center" style={{padding: "24px 12px"}}>
         <Header />
 
@@ -63,4 +63,4 @@ const Row = () => (
     </div>
 )
 
-ReactDOM.render(<Row />, root)
+ReactDOM.render(<App />, root)
