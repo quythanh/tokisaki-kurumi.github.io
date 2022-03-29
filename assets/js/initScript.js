@@ -1,8 +1,8 @@
 // add css
 const cssURL = [
-    "./static/css/bootstrap/bootstrap.min.css",
-    "./static/css/myCustom.css",
-    "./static/css/fontawesomepro/all.css"
+    "./assets/css/bootstrap/bootstrap.min.css",
+    "./assets/css/myCustom.css",
+    "./assets/css/fontawesomepro/all.css"
 ]
 
 var link1, link2, link3, links = [link1, link2, link3]

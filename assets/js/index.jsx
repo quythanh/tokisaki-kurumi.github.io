@@ -34,7 +34,7 @@ const Header = () => (
     <div style={{textAlign: "center", marginBottom: "16px"}}>
         <img
             id="avatar"
-            src="https://media.discordapp.net/attachments/855110078628757504/899230780776132608/image0.jpg"
+            src="./assets/images/avatar.jpg"
             alt="avatar"
         />
         <br />
