@@ -6,17 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png" />
-
-    <script src="./assets/js/initScript.js" defer></script>
-    <script src="./assets/js/react/react.production.min.js"></script>
-    <script src="./assets/js/react/react-dom.production.min.js"></script>
-    <script src="./assets/js/babel/babel.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/fontawesomepro/all.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/dark_style.css">
 
     <title>Home</title>
 </head>
 
 <body>
-    <script type="text/babel" src="./assets/js/index.jsx"></script>
+    <header>
+        <div class="header__logo">
+            <img src="./assets/images/favicon.png" alt="logo">
+        </div>
+
+        <div class="header__redirect">
+            <a class="header__btn" href="https://www.facebook.com/quythanh2205/" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="header__btn" href="https://instagram.com/quythanh2205" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a class="header__btn" href="https://github.com/quythanh" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a class="header__btn" href="https://discord.gg/h5CU3aF48w" target="_blank">
+                <i class="fab fa-discord"></i>
+            </a>
+        </div>
+
+        <div class="header__mode">
+            <i class="fad fa-sun-bright"></i>
+            <i class="fad fa-moon-stars hide"></i>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="cover">
+            <div class="cover__blur"></div>
+            <img class="cover__img" src="./assets/images/banner.png" alt="cover img">
+        </div>
+
+        <div class="info">
+            <div>
+                <div class="info__left">
+                    <div class="avatar">
+                        <img src="./assets/images/avatar.jpg" alt="avatar">
+                    </div>
+                    <div class="name">Tsàn Quý Thành</div>
+                </div>
+                <div class="info__right">
+                    <a class="contact" href="https://mail.google.com/mail/?view=cm&fs=1&to=quythanh2205@gmail.com" target="_blank">
+                        <i class="fad fa-envelope"></i> Contact me
+                    </a>
+                    <a class="message" href="https://www.facebook.com/messages/t/quythanh2205/" target="_blank">
+                        <i class="fab fa-facebook-messenger"></i> Message
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
