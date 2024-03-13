@@ -3,6 +3,7 @@ import styles from './Home.module.scss';
 const cx = classNames.bind(styles);
 
 import Header from '@layout/Header';
+import MusicPlayer from '@/MusicPlayer';
 
 const Home = () => {
     return (
@@ -20,12 +21,12 @@ const Home = () => {
                             <div className={cx('avatar')}>
                                 <img src="/assets/images/avatar.jpg" alt="avatar" />
                             </div>
-                            <div className={cx('name')}>Tsàn Quý Thành</div>
+                            <div className={cx('name')}>Thành</div>
                         </div>
                         <div className={cx('info__right')}>
                             <a
                                 className={cx('contact')}
-                                href="https://mail.google.com/mail/?view=cm&fs=1&to=quythanh2205@gmail.com"
+                                href="https://mail.google.com/mail/?view=cm&fs=1&to=quythanh.dev@icloud.com"
                                 target="_blank"
                             >
                                 <i className="fad fa-envelope"></i> Contact me
@@ -39,6 +40,10 @@ const Home = () => {
                             </a>
                         </div>
                     </div>
+                </div>
+
+                <div className={cx('main')}>
+                    <MusicPlayer />
                 </div>
             </div>
         </>

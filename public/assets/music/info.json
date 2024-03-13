@@ -1,0 +1,24 @@
+[
+    {
+        "id": 0,
+        "name": "Luyến Nhân Tâm",
+        "singer": "Âm Âm Bất Hội Anh",
+        "gradientStart": "fce7ef",
+        "gradientEnd": "fffdff",
+        "boxShadowColor": "d2c7cd"
+    },
+    {
+        "id": 1,
+        "name": "Điều Em Mong Đợi Không Phải Là Tuyết",
+        "singer": "Trương Diệu Cách",
+        "gradientStart": "c4a5bd",
+        "boxShadowColor": "a38ea7"
+    },
+    {
+        "id": 2,
+        "name": "Một Đường Nở Hoa",
+        "singer": "Ôn Dịch Tâm",
+        "gradientStart": "f0cbdb",
+        "boxShadowColor": "c5afbc"
+    }
+]

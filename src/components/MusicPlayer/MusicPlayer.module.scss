@@ -1,0 +1,66 @@
+.wrapper {
+    width: 350px;
+    height: 430px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.disk {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 0;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.5s linear;
+
+    &::before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        border-radius: 50%;
+        border: 1px solid #ccc;
+    }
+
+    > img {
+        width: 100%;
+    }
+}
+
+.info {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+
+    .play {
+        font-size: 65px;
+        cursor: pointer;
+    }
+
+    .next,
+    .prev {
+        font-size: 28px;
+        cursor: pointer;
+    }
+}
+
+.time-group {
+    display: flex;
+    gap: 5px;
+
+    .progress {
+        flex: 1;
+    }
+}
