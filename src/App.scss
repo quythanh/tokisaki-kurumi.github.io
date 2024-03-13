@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #fff;
+    --primary-text: #010101;
+
+    --header-btn-color: #606266;
+    --header-btn-bg-hover: rgba(0, 0, 0, 0.1);
+    --header-mode-color: unset;
+
+    --body-bg: #f0f2f5;
+    --body-contact-bg: #e4e6eb;
+    --body-contact-bg-hover: #d8dadf;
+    --body-message-bg: #1b74e4;
+    --body-message-bg-hover: #1a6ed8;
+    --body-message-color: #f2f2f2;
+}
+
+body {
+    &[app-mode='dark'] {
+        --primary: #242526;
+        --primary-text: #e4e6eb;
+
+        --header-btn-color: #b8bbbf;
+        --header-btn-bg-hover: rgba(255, 255, 255, 0.1);
+        --header-mode-color: #b8bbbf;
+
+        --body-bg: #18191a;
+        --body-contact-bg: #3a3b3c;
+        --body-contact-bg-hover: #4e4f50;
+        --body-message-bg: #1a6ed8;
+        --body-message-bg-hover: #1b74e4;
+        --body-message-color: #fff;
+    }
+
+    #root {
+        min-height: 100vh;
+        width: 100vw;
+        user-select: none;
+        overflow: hidden;
+        background: var(--body-bg);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
